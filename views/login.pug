@@ -1,0 +1,25 @@
+extends header
+block content 
+    //- if error 
+    //-     h1 ERROR EN LA PLATAFORMA
+    .content-form 
+        h1 login 
+        form(id='login' action='/signin' method='POST')
+            .row-form 
+                input(
+                    type='email'
+                    name='email'
+                    placeholder='Email'
+                )
+                br
+                input(
+                    type='password'
+                    name='password'
+                    placeholder='Contraseña'
+                )
+                br
+                input(
+                    type='submit'                    
+                    value='Conectar'
+                    class='row-form-btn'
+                )
